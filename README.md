@@ -4,8 +4,12 @@ An open, free framework that helps small and mid-sized enterprises establish and
 Cloud Center of Excellence (CCoE) — the standing governance function that holds the standards
 by which cloud resources are provisioned, secured, governed, and paid for.
 
-Large enterprises overwhelmingly operate a CCoE. Small and mid-sized enterprises overwhelmingly
-do not, and the gap shows up as inconsistent security configuration across accounts, duplicated
+Its purpose is to strengthen the **cybersecurity and operational resilience** of smaller firms. Cost governance is
+part of it for a practical reason: savings are what persuade a small firm to adopt governance, and governance is
+what makes it harder to breach and faster to recover.
+
+Most large enterprises operate a CCoE; fewer than half of small and mid-sized enterprises do,
+and the gap shows up as inconsistent security configuration across accounts, duplicated
 engineering effort, unclear architectural ownership, and cloud spending that grows without
 corresponding accountability. That gap is not a knowledge problem — the practices are well
 documented by every major cloud provider. It is a **packaging** problem: enterprise governance
@@ -60,6 +64,39 @@ rather than a description of something you should build.
 
 **All ten components are now published.** Component 10 applies only where AI workloads are in
 use; organizations without them use Components 1 through 9 and mark the AI domain not applicable.
+
+---
+
+## Security and resilience alignment — NIST Cybersecurity Framework 2.0
+
+The nine core components map to the six functions of the
+[NIST Cybersecurity Framework (CSF) 2.0](https://www.nist.gov/cyberframework):
+
+| CSF 2.0 function | Framework components | Coverage |
+|---|---|---|
+| Govern (GV.PO, GV.RM) | 1 Maturity assessment · 5 Governance policy package · 10 AI workload governance (optional) | Addressed |
+| Identify (ID.AM, ID.RA) | 1 Maturity assessment · 3 Cost baseline (resource inventory) · 4 Architecture review | Addressed |
+| Protect (PR.AA, PR.DS, PR.PS, PR.AT, PR.IR) | 2 Security baseline · 5 Access-control policies · 8 Employee training · 4 Resilience standards | Addressed |
+| Detect (DE.CM) | 2 Audit logging and configuration recording · 9 Continuous monitoring | Addressed |
+| Respond (RS.MA, RS.CO) | 5 Compromise reporting (access-control policy) · SME-scoped incident response plan listed as planned | Partial — incident response plan not yet published |
+| Recover (RC.RP) | 7 Disaster recovery | Addressed |
+
+FinOps controls (component 6) lie outside the CSF's scope by design. Like the component-level
+mappings in each folder, these are directional mappings intended to aid reconciliation. They are
+not certifications, and adopting the framework does not constitute compliance with any standard.
+
+## How outcomes are measured
+
+Every implementation is assessed against the same six indicators:
+
+1. **Security-control adoption rate** — share of the security baseline implemented and operating
+2. **Disaster-recovery readiness** — recovery procedures documented and tested
+3. **Governance maturity score** — movement from the component-1 baseline, re-measured under component 9
+4. **Employee training completion** — staff completing the knowledge-transfer curriculum
+5. **Cloud migration success rate** — workloads migrated within the framework's architectural and security standards
+6. **Cloud cost reduction achieved** — realized savings against the component-3 baseline
+
+Aggregate, anonymized results for these indicators will be published here annually.
 
 ---
 
@@ -132,7 +169,8 @@ Those directives govern federal agencies and their suppliers; they do not by the
 private SMEs, and nothing here claims to implement them on anyone's behalf. Federal guidance
 largely defines *what* to achieve. This framework supplies deployable artifacts for organizations
 without the staff to work out *how* — and where a control maps to published guidance, the mapping
-is noted in that component's documentation.
+is noted in that component's documentation. A framework-level mapping to the six CSF 2.0 functions
+appears above.
 
 ---
 
@@ -161,5 +199,5 @@ commercial contexts. Attribution is appreciated but adoption matters more.
 ## Author
 
 **Leonardo Toras Junior** — Senior Cloud Solutions Architect; IEEE Senior Member; 17+ years in
-cloud infrastructure and governance across financial services, manufacturing, and enterprise
+IT infrastructure, including cloud architecture and governance, across financial services, manufacturing, and enterprise
 technology.
