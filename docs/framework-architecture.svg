@@ -1,67 +1,131 @@
-MSME Cloud Governance Framework
-How nine components govern a small or mid-sized firm's cloud estate, and how the results are measured
-Aligned with NIST CSF 2.0
-Govern
-Identify
-Protect
-Detect
-Respond (partial)
-Recover
-Governance layer: the framework, executed in sequence
-Assess
-Implement
-Transfer and sustain
-1
-Cloud maturity assessment
-25-indicator scored workbook
-2
-Security baseline
-Terraform reference for AWS
-3
-Cost baseline
-Baseline set before any change
-4
-Architecture review
-Resilience findings, prioritized
-5
-Governance policy package
-Access-control policy; more planned
-6
-FinOps controls
-Cost accountability
-7
-Disaster recovery
-Recovery procedures, tested
-10
-AI workload governance
-Optional, where AI workloads run
-8
-Employee training
-Five-module courseware
-9
-Continuous monitoring
-Scheduled re-assessment
-Component 9 re-measures the component 1 score
-Baselines, policies and recovery procedures applied
-Your cloud estate: accounts, workloads and data
-AWS
-Terraform baseline included
-Microsoft Azure
-Assessment, policies and methods apply
-Google Cloud
-Assessment, policies and methods apply
-Every implementation measured on six indicators, security first
-Security-control
-adoption
-Disaster-recovery
-readiness
-Governance
-maturity score
-Employee training
-completion
-Cloud migration
-success
-Cloud cost
-reduction
-Free and open under the MIT License. Any organization can adopt it directly; nothing here requires engaging anyone.
-Aggregate, anonymized indicator results will be published in this repository each year.
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 850" width="1000" height="850" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpiZDdkYjNmYS0wMzczLTQ5YjktOTExYS1iYjk4Y2MyNWUxNTQAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaKKcg0fRqlUPW3NgyDNvNOcAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDphNzBhZmFkNi1jNDU3LTRhMDktYTcyOS00MGQxZGI5ZTY5NTlscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo2qPLlX3FoKDN30s2RoM5GQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg7jL98EzHw9CK9NDLvQZq2d1i6DsZ6KV3o8NOAJGPTsSkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaMhOhMyJsivt/M7ru6nXqbMAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCCAmBkhVcqBwpOW1YfglInev8Gkpo/AXND5g2pmFdSt02RuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBjhZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmJkN2RiM2ZhLTAzNzMtNDliOS05MTFhLWJiOThjYzI1ZTE1NC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjI3ZTEzODkxLWQ2MDQtNDA1Ni05ZWI2LWU4MTUxNGIzNmZkMnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDuMv3wTMfD0Ir00Mu9BmrZ3WLoOxnopXejw04AkY9OxKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg3muRYpNknsRygdBQO/X95/7hK6VopIyduyupVoe/FZWiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggpj7zWoUKcTQ2CNa+sy7ArwDejbuzCRJIRjn5z6MS4kx0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQHDYNn27Lb2j30Cn/EgaUoZ51NBjiyLYg6/zN8z3X582ncvtSdRmcRcPG45DVVTAvQXN0Smpq6lzraXg+1kQw0o=</c2pa:manifest></metadata>
+  <title>Architecture of the MSME Cloud Governance Framework</title>
+  <desc>Nine components in three phases form a governance layer over a small or mid-sized firm's cloud estate. Component 9 re-measures the maturity score set by component 1. The framework aligns with the six NIST CSF 2.0 functions, with Respond partial, and every implementation is measured on six indicators.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52606D"/>
+    </marker>
+    <marker id="loop" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5A4E8C"/>
+    </marker>
+  </defs>
+
+  <!-- white canvas, so the diagram stays readable in GitHub's dark theme -->
+  <rect width="1000" height="850" fill="#FFFFFF"/>
+
+  <!-- title -->
+  <text x="24" y="46" font-size="24" font-weight="700" fill="#172B3F">MSME Cloud Governance Framework</text>
+  <text x="24" y="72" font-size="13.5" fill="#52606D">How nine components govern a small or mid-sized firm's cloud estate, and how the results are measured</text>
+
+  <!-- NIST CSF 2.0 alignment strip -->
+  <text x="24" y="118" font-size="13" font-weight="600" fill="#172B3F">Aligned with NIST CSF 2.0</text>
+  <g font-size="12.5" text-anchor="middle">
+    <rect x="232" y="100" width="100" height="28" rx="14" fill="#EEF2F6" stroke="#B8C4CF"/><text x="282" y="119" fill="#172B3F">Govern</text>
+    <rect x="342" y="100" width="100" height="28" rx="14" fill="#EEF2F6" stroke="#B8C4CF"/><text x="392" y="119" fill="#172B3F">Identify</text>
+    <rect x="452" y="100" width="100" height="28" rx="14" fill="#EEF2F6" stroke="#B8C4CF"/><text x="502" y="119" fill="#172B3F">Protect</text>
+    <rect x="562" y="100" width="100" height="28" rx="14" fill="#EEF2F6" stroke="#B8C4CF"/><text x="612" y="119" fill="#172B3F">Detect</text>
+    <rect x="672" y="100" width="150" height="28" rx="14" fill="#FFF4DA" stroke="#E3B341"/><text x="747" y="119" fill="#8A5A00">Respond (partial)</text>
+    <rect x="832" y="100" width="100" height="28" rx="14" fill="#EEF2F6" stroke="#B8C4CF"/><text x="882" y="119" fill="#172B3F">Recover</text>
+  </g>
+
+  <!-- governance layer -->
+  <rect x="24" y="148" width="952" height="382" rx="12" fill="#FBFCFD" stroke="#C9D2DA"/>
+  <text x="40" y="172" font-size="13" font-weight="600" fill="#52606D">Governance layer: the framework, executed in sequence</text>
+
+  <!-- lane 1: Assess -->
+  <rect x="40" y="184" width="290" height="302" rx="10" fill="#EEF4FA"/>
+  <text x="56" y="210" font-size="15.5" font-weight="700" fill="#2E5E8C">Assess</text>
+  <!-- lane 2: Implement -->
+  <rect x="354" y="184" width="290" height="302" rx="10" fill="#EAF5F3"/>
+  <text x="370" y="210" font-size="15.5" font-weight="700" fill="#177E74">Implement</text>
+  <!-- lane 3: Transfer and sustain -->
+  <rect x="668" y="184" width="290" height="302" rx="10" fill="#F1EFF7"/>
+  <text x="684" y="210" font-size="15.5" font-weight="700" fill="#5A4E8C">Transfer and sustain</text>
+
+  <!-- sequence arrows between lanes -->
+  <line x1="332" y1="205" x2="351" y2="205" stroke="#52606D" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="646" y1="205" x2="665" y2="205" stroke="#52606D" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <!-- component boxes: white, left accent bar in the lane colour -->
+  <g font-size="13.5">
+    <!-- Assess -->
+    <rect x="52" y="222" width="266" height="54" rx="6" fill="#FFFFFF" stroke="#D5DDE5"/><rect x="52" y="222" width="5" height="54" fill="#2E5E8C"/>
+    <text x="68" y="244" font-weight="700" fill="#2E5E8C">1</text><text x="88" y="244" font-weight="600" fill="#172B3F">Cloud maturity assessment</text>
+    <text x="88" y="264" font-size="12" fill="#52606D">25-indicator scored workbook</text>
+
+    <rect x="52" y="286" width="266" height="54" rx="6" fill="#FFFFFF" stroke="#D5DDE5"/><rect x="52" y="286" width="5" height="54" fill="#2E5E8C"/>
+    <text x="68" y="308" font-weight="700" fill="#2E5E8C">2</text><text x="88" y="308" font-weight="600" fill="#172B3F">Security baseline</text>
+    <text x="88" y="328" font-size="12" fill="#52606D">Terraform reference for AWS</text>
+
+    <rect x="52" y="350" width="266" height="54" rx="6" fill="#FFFFFF" stroke="#D5DDE5"/><rect x="52" y="350" width="5" height="54" fill="#2E5E8C"/>
+    <text x="68" y="372" font-weight="700" fill="#2E5E8C">3</text><text x="88" y="372" font-weight="600" fill="#172B3F">Cost baseline</text>
+    <text x="88" y="392" font-size="12" fill="#52606D">Baseline set before any change</text>
+
+    <rect x="52" y="414" width="266" height="54" rx="6" fill="#FFFFFF" stroke="#D5DDE5"/><rect x="52" y="414" width="5" height="54" fill="#2E5E8C"/>
+    <text x="68" y="436" font-weight="700" fill="#2E5E8C">4</text><text x="88" y="436" font-weight="600" fill="#172B3F">Architecture review</text>
+    <text x="88" y="456" font-size="12" fill="#52606D">Resilience findings, prioritized</text>
+
+    <!-- Implement -->
+    <rect x="366" y="222" width="266" height="54" rx="6" fill="#FFFFFF" stroke="#D5DDE5"/><rect x="366" y="222" width="5" height="54" fill="#177E74"/>
+    <text x="382" y="244" font-weight="700" fill="#177E74">5</text><text x="402" y="244" font-weight="600" fill="#172B3F">Governance policy package</text>
+    <text x="402" y="264" font-size="12" fill="#52606D">Access-control policy; more planned</text>
+
+    <rect x="366" y="286" width="266" height="54" rx="6" fill="#FFFFFF" stroke="#D5DDE5"/><rect x="366" y="286" width="5" height="54" fill="#177E74"/>
+    <text x="382" y="308" font-weight="700" fill="#177E74">6</text><text x="402" y="308" font-weight="600" fill="#172B3F">FinOps controls</text>
+    <text x="402" y="328" font-size="12" fill="#52606D">Cost accountability</text>
+
+    <rect x="366" y="350" width="266" height="54" rx="6" fill="#FFFFFF" stroke="#D5DDE5"/><rect x="366" y="350" width="5" height="54" fill="#177E74"/>
+    <text x="382" y="372" font-weight="700" fill="#177E74">7</text><text x="402" y="372" font-weight="600" fill="#172B3F">Disaster recovery</text>
+    <text x="402" y="392" font-size="12" fill="#52606D">Recovery procedures, tested</text>
+
+    <rect x="366" y="414" width="266" height="54" rx="6" fill="#FFFFFF" stroke="#177E74" stroke-dasharray="5 4"/>
+    <text x="382" y="436" font-weight="700" fill="#177E74">10</text><text x="408" y="436" font-weight="600" fill="#172B3F">AI workload governance</text>
+    <text x="408" y="456" font-size="12" fill="#52606D">Optional, where AI workloads run</text>
+
+    <!-- Transfer and sustain -->
+    <rect x="680" y="222" width="266" height="54" rx="6" fill="#FFFFFF" stroke="#D5DDE5"/><rect x="680" y="222" width="5" height="54" fill="#5A4E8C"/>
+    <text x="696" y="244" font-weight="700" fill="#5A4E8C">8</text><text x="716" y="244" font-weight="600" fill="#172B3F">Employee training</text>
+    <text x="716" y="264" font-size="12" fill="#52606D">Five-module courseware</text>
+
+    <rect x="680" y="286" width="266" height="54" rx="6" fill="#FFFFFF" stroke="#D5DDE5"/><rect x="680" y="286" width="5" height="54" fill="#5A4E8C"/>
+    <text x="696" y="308" font-weight="700" fill="#5A4E8C">9</text><text x="716" y="308" font-weight="600" fill="#172B3F">Continuous monitoring</text>
+    <text x="716" y="328" font-size="12" fill="#52606D">Scheduled re-assessment</text>
+  </g>
+
+  <!-- feedback loop: component 9 re-measures the score from component 1 -->
+  <path d="M813,340 L813,506 L32,506 L32,249 L50,249" fill="none" stroke="#5A4E8C" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#loop)"/>
+  <rect x="330" y="496" width="340" height="20" fill="#FBFCFD"/>
+  <text x="500" y="511" font-size="12.5" fill="#5A4E8C" text-anchor="middle">Component 9 re-measures the component 1 score</text>
+
+  <!-- governance applied to the estate -->
+  <line x1="500" y1="531" x2="500" y2="566" stroke="#52606D" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <text x="512" y="553" font-size="12" fill="#52606D">Baselines, policies and recovery procedures applied</text>
+
+  <!-- cloud estate -->
+  <rect x="24" y="570" width="952" height="104" rx="12" fill="#F5F7F9" stroke="#C9D2DA"/>
+  <text x="40" y="594" font-size="13" font-weight="600" fill="#52606D">Your cloud estate: accounts, workloads and data</text>
+  <g font-size="14" font-weight="600" fill="#172B3F">
+    <rect x="40" y="606" width="298" height="54" rx="6" fill="#FFFFFF" stroke="#C9D2DA"/>
+    <text x="56" y="628">AWS</text><text x="56" y="648" font-size="12" font-weight="400" fill="#52606D">Terraform baseline included</text>
+    <rect x="351" y="606" width="298" height="54" rx="6" fill="#FFFFFF" stroke="#C9D2DA"/>
+    <text x="367" y="628">Microsoft Azure</text><text x="367" y="648" font-size="12" font-weight="400" fill="#52606D">Assessment, policies and methods apply</text>
+    <rect x="662" y="606" width="298" height="54" rx="6" fill="#FFFFFF" stroke="#C9D2DA"/>
+    <text x="678" y="628">Google Cloud</text><text x="678" y="648" font-size="12" font-weight="400" fill="#52606D">Assessment, policies and methods apply</text>
+  </g>
+
+  <!-- measurement -->
+  <line x1="500" y1="675" x2="500" y2="706" stroke="#52606D" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <text x="512" y="695" font-size="12" fill="#52606D">Every implementation measured on six indicators, security first</text>
+  <g font-size="12.5" fill="#172B3F" text-anchor="middle">
+    <rect x="24" y="710" width="152" height="46" rx="8" fill="#EEF4FA" stroke="#B9CDE0"/><text x="100" y="730">Security-control</text><text x="100" y="746">adoption</text>
+    <rect x="184" y="710" width="152" height="46" rx="8" fill="#EEF4FA" stroke="#B9CDE0"/><text x="260" y="730">Disaster-recovery</text><text x="260" y="746">readiness</text>
+    <rect x="344" y="710" width="152" height="46" rx="8" fill="#F4F6F8" stroke="#C9D2DA"/><text x="420" y="730">Governance</text><text x="420" y="746">maturity score</text>
+    <rect x="504" y="710" width="152" height="46" rx="8" fill="#F4F6F8" stroke="#C9D2DA"/><text x="580" y="730">Employee training</text><text x="580" y="746">completion</text>
+    <rect x="664" y="710" width="152" height="46" rx="8" fill="#F4F6F8" stroke="#C9D2DA"/><text x="740" y="730">Cloud migration</text><text x="740" y="746">success</text>
+    <rect x="824" y="710" width="152" height="46" rx="8" fill="#F4F6F8" stroke="#C9D2DA"/><text x="900" y="730">Cloud cost</text><text x="900" y="746">reduction</text>
+  </g>
+
+  <!-- footer -->
+  <text x="24" y="800" font-size="12.5" fill="#52606D">Free and open under the MIT License. Any organization can adopt it directly; nothing here requires engaging anyone.</text>
+  <text x="24" y="822" font-size="12.5" fill="#52606D">Aggregate, anonymized indicator results will be published in this repository each year.</text>
+</svg>
