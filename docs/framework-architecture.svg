@@ -1,0 +1,67 @@
+MSME Cloud Governance Framework
+How nine components govern a small or mid-sized firm's cloud estate, and how the results are measured
+Aligned with NIST CSF 2.0
+Govern
+Identify
+Protect
+Detect
+Respond (partial)
+Recover
+Governance layer: the framework, executed in sequence
+Assess
+Implement
+Transfer and sustain
+1
+Cloud maturity assessment
+25-indicator scored workbook
+2
+Security baseline
+Terraform reference for AWS
+3
+Cost baseline
+Baseline set before any change
+4
+Architecture review
+Resilience findings, prioritized
+5
+Governance policy package
+Access-control policy; more planned
+6
+FinOps controls
+Cost accountability
+7
+Disaster recovery
+Recovery procedures, tested
+10
+AI workload governance
+Optional, where AI workloads run
+8
+Employee training
+Five-module courseware
+9
+Continuous monitoring
+Scheduled re-assessment
+Component 9 re-measures the component 1 score
+Baselines, policies and recovery procedures applied
+Your cloud estate: accounts, workloads and data
+AWS
+Terraform baseline included
+Microsoft Azure
+Assessment, policies and methods apply
+Google Cloud
+Assessment, policies and methods apply
+Every implementation measured on six indicators, security first
+Security-control
+adoption
+Disaster-recovery
+readiness
+Governance
+maturity score
+Employee training
+completion
+Cloud migration
+success
+Cloud cost
+reduction
+Free and open under the MIT License. Any organization can adopt it directly; nothing here requires engaging anyone.
+Aggregate, anonymized indicator results will be published in this repository each year.
