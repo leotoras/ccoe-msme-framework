@@ -8,6 +8,8 @@ Its purpose is to strengthen the **cybersecurity and operational resilience** of
 part of it for a practical reason: savings are what persuade a small firm to adopt governance, and governance is
 what makes it harder to breach and faster to recover.
 
+![Architecture of the MSME Cloud Governance Framework: nine components in three phases (Assess, Implement, Transfer and sustain) form a governance layer over a firm's AWS, Microsoft Azure or Google Cloud estate. Component 9 re-measures the maturity score set by component 1. The framework aligns with the six NIST CSF 2.0 functions, with Respond partial, and every implementation is measured on six indicators, security first.](docs/framework-architecture.svg)
+
 Most large enterprises operate a CCoE; fewer than half of small and mid-sized enterprises do,
 and the gap shows up as inconsistent security configuration across accounts, duplicated
 engineering effort, unclear architectural ownership, and cloud spending that grows without
