@@ -4,6 +4,8 @@ An open, free framework that helps small and mid-sized enterprises establish and
 Cloud Center of Excellence (CCoE) — the standing governance function that holds the standards
 by which cloud resources are provisioned, secured, governed, and paid for.
 
+**Endeavor.** I will publish, maintain, and implement a free cloud governance framework, mapped to the NIST Cybersecurity Framework 2.0, for U.S. small and mid-sized businesses that run on the cloud without a dedicated security team, so that they, and the larger organizations whose supply chains they belong to, can secure, govern, and recover their cloud environments, advancing the small-business cybersecurity priority that Congress set in the NIST Small Business Cybersecurity Act.
+
 Its purpose is to strengthen the **cybersecurity and operational resilience** of smaller firms. Cost governance is
 part of it for a practical reason: savings are what persuade a small firm to adopt governance, and governance is
 what makes it harder to breach and faster to recover.
